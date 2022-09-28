@@ -16,7 +16,7 @@ export class ComparitionService {
       const usefulData = getXlsData(excelBuffer, options);
 
       // 从任意一列开始循环
-      Promise.all(/*  */
+      Promise.all(
         usefulData[options[0]].map(async (item, index) => {
           return new Promise<void>(async (resolve, reject) => {
             // ocr识别pdf
